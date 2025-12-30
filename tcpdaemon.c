@@ -63,10 +63,10 @@ void convertir_en_daemon(){
 
 int main(){
 
-	convertir_en_daemon();
-
 	log_file = fopen(LOG_FILE, "a");
+
 	if (!log_file){
+		perror("No se pudo abrir el log");
 		exit(EXIT_FAILURE);
 	}
 

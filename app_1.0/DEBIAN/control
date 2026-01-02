@@ -1,0 +1,7 @@
+Package: app-renso
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Renso Peralta <ripu0001@ce.pucmm.edu.do>
+Description: Aplicacion que muestra id, nombre y correo del estudiante

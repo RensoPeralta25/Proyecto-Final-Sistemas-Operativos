@@ -32,6 +32,7 @@ void manejador (int signal){
 
 	if (signal == SIGTERM || signal == SIGINT){
 		escribir_log("Signal recibida, cerrando daemon...");
+		close(server_fd);
 		fclose(log_file);
 		exit(0);
 	}
@@ -72,7 +73,7 @@ int main(){
 	struct sockaddr_in address; // Estructura que define familia de protocolos IPv4 para comunicacion.
 	socklen_t addrlen = sizeof(address); // Longitud de la direccion ip
 
-	convertir_en_daemon();
+	//convertir_en_daemon();
 
 	log_file = fopen(LOG_FILE, "a");
 

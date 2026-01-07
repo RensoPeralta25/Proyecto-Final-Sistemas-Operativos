@@ -73,7 +73,7 @@ int main(){
 	struct sockaddr_in address; // Estructura que define familia de protocolos IPv4 para comunicacion.
 	socklen_t addrlen = sizeof(address); // Longitud de la direccion ip
 
-	//convertir_en_daemon();
+        convertir_en_daemon();
 
 	log_file = fopen(LOG_FILE, "a");
 
